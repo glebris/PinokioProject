@@ -41,7 +41,7 @@ print valueList(motorName,initPosition)
 #Move the motor to the initial value without trajectory controller
 motorControler.setMotorsByName(valueList(motorName,initPosition))
 time.sleep(5)
-#Compute the different coefficiant and the complete time to make the trajectory
+#Compute the different coefficients and the complete time to make the trajectory
 trajectoryController.set(initPosition,finalPosition)
 #Update return if the trajectory is ended or not
 while not trajectoryController.update():

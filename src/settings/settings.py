@@ -14,6 +14,9 @@ class MotorSettings(Settings):
   def __init__(self, path = "../settings/motorSettings.yaml"):
     Settings.__init__(self, path)
 
+class SlaveMotorSettings(Settings):
+  def __init__(self, path = "../settings/slaveMotorSettings.yaml"):
+    Settings.__init__(self, path)
  
 class ModelSettings(Settings):
   def __init__(self, path = "../settings/modelSettings.yaml"):
