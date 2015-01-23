@@ -5,26 +5,36 @@ sys.path.insert(0,"../settings/")
 import settings
 
 
+
+def valueList(name,position):
+  """ Concatenate two lists in one list of couple """
+  values = []
+  for i in range(len(name)):
+    values += [[name[i],position[i]]]
+  return values
+
 #Get motors from the old/master lamp.
 motorSettings = settings.MotorSettings()
 masterMotorController = motorControl.MotorControl(motorSettings.get())
 
 #Get motors from the slave lamp.
-#slaveMotorSettings = settings.SlaveMotorSettings()
-#slaveMotorController = motorControl.MotorControl(motorSettings.get())
+slaveMotorSettings = settings.SlaveMotorSettings()
+slaveMotorController = motorControl.MotorControl(motorSettings.get())
 
-#while(1):
-masterPos = masterMotorController.readAllMotors()
-print "ICI MON GARS, ICI"
-print masterPos
+while(1):
+	masterPos = masterMotorController.readAllMotors()
 
-	#values = []
-	#for Id_m in masterMotorController.idList:
-		#for Id_s in slaveMotorController.idList:
-			#if Id_s == 10*Id_m:
-				#it depends on what masterPos looks like
-	#values.append
-	#slaveMotorController.setMotorsById
+	#Taking only connected motors to Master Lamp
+	nameWorkMotorList = []
+	for motor in masterMotorController.motors:
+      if motor != None :
+      	nameWorkMotorList.append(motor.name)
+
+    #Creating pairs (motorname, angle)
+	values = valueList(nameWorkMotorList, masterPos)
+
+	slaveMotorController.setMotorsByName(values)
+
 
 
 
