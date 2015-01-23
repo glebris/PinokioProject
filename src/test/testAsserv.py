@@ -21,6 +21,7 @@ masterMotorController = motorControl.MotorControl(motorSettings.get())
 slaveMotorSettings = settings.SlaveMotorSettings()
 slaveMotorController = motorControl.MotorControl(motorSettings.get())
 
+
 while(1):
 	masterPos = masterMotorController.readAllMotors()
 
@@ -35,6 +36,9 @@ while(1):
 
 	slaveMotorController.setMotorsByName(values)
 
+
+	#Proposition N°1
+	#sleep(0.5)
 
 
 
