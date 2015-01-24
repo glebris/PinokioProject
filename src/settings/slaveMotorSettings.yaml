@@ -1,1 +1,1 @@
-{baudRate: 1000000 , port: /dev/ttyUSB1, motorConfig: [[70,0,180,"bowl"],[40,160,245,"mid"],[60,105,155,"bottom"],[50,75,190,"top"],[160,125,175,"head"]}
+{baudRate: 1000000 , port: /dev/ttyUSB1, motorConfig: [[27,0,180,"bowl"],[24,160,245,"mid"],[26,105,155,"bottom"],[25,75,190,"top"],[36,125,175,"head"]]}
