@@ -1,9 +1,9 @@
 PinokioProject
 ==============
 
-![pinokio](https://raw.github.com/Fdepraetre/PinokioProject/master/img/pinokio.JPG)
+![pinokio](https://raw.github.com/glebris/PinokioProject/master/img/pinokio.JPG)
 
-In the [wiki of this project](https://github.com/Fdepraetre/PinokioProject/wiki) you will find all documentation you need to build the lamp and use it.
+In the [wiki of this project](https://github.com/glebris/PinokioProject/wiki) you will find all documentation you need to build the lamp and use it.
 
 [original pinokio site](http://adambendrordesign.wordpress.com/category/mddn-251/)
 
