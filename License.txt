@@ -1,4 +1,5 @@
-Copyright (c) <2014> Fabien Depraetre,Thibault Lambert, Romain Sagean
+Copyright (c) <2014> Fabien Depraetre, Thibault Lambert, Romain Sagean
+Copyright (c) <2015> Gaëtan le Bris, Robin Gourdel, Étienne Chanaron
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
